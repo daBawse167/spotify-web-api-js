@@ -4,7 +4,7 @@
 /**
  * Class representing the API
  */
-var SpotifyWebApi = (function () {
+function SpotifyWebApi () {
   var _baseUri = 'https://api.spotify.com/v1';
   var _accessToken = null;
   var _promiseImplementation = null;
@@ -2081,7 +2081,7 @@ var SpotifyWebApi = (function () {
   };
 
   return Constr;
-})();
+}
 
 if (typeof module === 'object' && typeof module.exports === 'object') {
   module.exports = SpotifyWebApi;
